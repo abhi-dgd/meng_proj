@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def cf_recommender(df: pd.DataFrame, search: str,):
     """
+    Check if connected to git SVN
     """
     dfbooks_rating = df.copy()
     dfbooks_rating_count = dfbooks_rating.groupby('User-ID')\
